@@ -1,0 +1,29 @@
+1. Unit Tests:
+A function called "multiplication" that returns the product of the two input numbers.
+
+Expect multiplication(2, 3) to be a number
+Expect multiplication(2, 3) to be equal to 6
+Expect multiplication(-2, -3) to be equal to 6
+Expect multiplication(0, 3) to be equal to 0
+Expect multiplication(2, "a") to be an error
+Expect multiplication(2, NaN) to be an error
+
+2. A function called "concatOdds" takes two arrays of integers as arguments. It should return a single array that only contains the odd numbers, in ascending order, from both of the arrays.
+
+Expect concatOdds([3, 2, 1], [9, 1, 1, 1, 4, 15, -1]) to be an array
+Expect concatOdds([3, 2, 1], [9, 1, 1, 1, 4, 15, -1]) to be equal to [-1, 1, 3, 9, 15]
+Expect concatOdds([], [1, 2, 3]) to be equal to [1, 3]
+Expect concatOdds([2, 4, 6], [1, 3, 5]) to be equal to [1, 3, 5]
+Expect concatOdds(["a", 2, 4], ["b", 1, 3]) to be an error
+Expect concatOdds([2.5, 3.7, -5], [9, 1, 1, 1, 4, 15, -1]) to be equal to [-5, 1, 3, 9, 15]
+
+3. Functional Tests:
+A shopping cart checkout feature that allows a user to check out as a guest (without an account), or as a logged-in user. They should be allowed to do either, but should be asked if they want to create an account or log in if they check out as a guest.
+
+When a user clicks "Checkout" with no items in their cart, they should see a message asking them to add items to their cart before checking out.
+When a user clicks "Checkout" as a guest, they should be prompted to enter their shipping and billing information.
+When a user clicks "Create Account" during checkout, they should be prompted to create an account before proceeding.
+When a user clicks "Log In" during checkout, they should be prompted to enter their login credentials before proceeding.
+When a user clicks "Checkout" as a logged-in user, they should be shown their saved shipping and billing information and asked to confirm or update it.
+When a user clicks "Confirm and Pay" after entering their shipping and billing information, they should be taken to a payment processing page.
+When a user clicks "Place Order" after successfully entering payment information, they should be taken to a confirmation page with their order details.
